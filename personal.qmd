@@ -1,0 +1,25 @@
+---
+title: "Personal Projects"
+toc: false
+---
+
+## Personal Project One
+
+```{=html}
+<div class="project">
+  <div class="project-img">
+    <img src="https://placehold.co/400x300?text=Main+Photo" alt="Personal Project One">
+  </div>
+  <div class="project-text">
+    <p><strong>Overview:</strong><br>
+      What you built on your own time and why.</p>
+    <p><strong>Skills:</strong><br>
+      Skill 1, Skill 2, Skill 3</p>
+    <!-- Optional link button (GitHub repo, video, etc.):
+    <a href="https://github.com/roprograms/REPO" target="_blank" class="btn-link">View Code</a>
+    -->
+  </div>
+</div>
+```
+
+---

@@ -1,0 +1,11 @@
+---
+title: "Hello World"
+description: "My first post"
+date: "2026-10-05"
+categories:
+  - Updates
+draft: true   # change to false to publish this post
+---
+
+Write your post here in regular Markdown. Put images in `posts/images/` and use
+`![](images/your-photo.jpg)` to show them.

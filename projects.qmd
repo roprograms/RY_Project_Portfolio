@@ -1,0 +1,142 @@
+---
+title: "Projects"
+toc: false
+---
+
+<!-- To add a project: copy everything from a "## Heading {#id}" line down to the
+     next "---", then change the heading, id, image paths, and text. The {#id} is
+     the link anchor used by the home page cards (e.g. projects.html#e79-seafloor-mapping).
+     To use a real photo, change src to e.g. images/projects/e79/main.jpg -->
+
+## Fluorescence-Guided Surgery Imaging System {#path-imaging}
+
+```{=html}
+<div class="project">
+  <div class="project-img">
+    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Fluorescence-guided surgery imaging system">
+  </div>
+  <div class="project-text">
+    <p><strong>Role:</strong> Mechanical Engineer, PATH Imaging &nbsp;|&nbsp; September 2026 – Present</p>
+    <p><strong>Overview:</strong><br>
+      A low-cost, Raspberry Pi–based dual-camera system that overlays fluorescence imaging onto
+      live visible-light video to guide surgeons. I'm working with a 7-person team and a PATH Imaging
+      liaison to deliver this at a fraction of the cost of commercial systems.</p>
+    <p><strong>Skills:</strong><br>
+      CAD, 3D Printing, Optical Mounting &amp; Alignment, Raspberry Pi, Embedded Firmware, Real-Time Image Processing</p>
+  </div>
+</div>
+
+<details class="more">
+  <summary></summary>
+  <div class="detail-grid">
+    <div>
+      <strong>Camera Mounting (CAD)</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Camera mount CAD">
+      <p>Leading CAD for the full camera mounting assembly, designing 3D-printed adapters that fit
+        16 mm and 25 mm C-mount lenses onto the Vision Components IMX412 RGB and TechNexion NIR
+        fluorescence camera modules with precise alignment.</p>
+    </div>
+    <div>
+      <strong>Firmware &amp; Image Processing</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Video overlay">
+      <p>Developing firmware and image-processing code to capture, synchronize, and overlay the
+        fluorescence and visible-light video feeds in real time.</p>
+    </div>
+    <div>
+      <strong>Team &amp; Sponsor</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Team">
+      <p>Collaborating with a 7-person team and a PATH Imaging liaison to meet clinical needs on a
+        tight budget.</p>
+    </div>
+  </div>
+</details>
+```
+
+---
+
+## Underwater Seafloor Mapping Robot {#e79-seafloor-mapping}
+
+```{=html}
+<div class="project">
+  <div class="project-img">
+    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Underwater seafloor mapping robot">
+  </div>
+  <div class="project-text">
+    <p><strong>Role:</strong> Project Lead, Harvey Mudd E79 &nbsp;|&nbsp; January 2026 – June 2026</p>
+    <p><strong>Overview:</strong><br>
+      I led a four-person team to build a seafloor mapping system on a $50 budget. It combines laser
+      triangulation and Raspberry Pi imaging to generate 3D topographic maps in MATLAB, mounted on an
+      underwater diving robot.</p>
+    <p><strong>Skills:</strong><br>
+      Team Leadership, Laser Triangulation, Raspberry Pi, MATLAB, Sensor Design, Prototyping &amp; Testing</p>
+  </div>
+</div>
+
+<details class="more">
+  <summary></summary>
+  <div class="detail-grid">
+    <div>
+      <strong>Sensors</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Sensors">
+      <p>Designed and built temperature, pressure, and camera sensors so the diving robot could
+        collect data underwater.</p>
+    </div>
+    <div>
+      <strong>Mapping</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="3D topographic map">
+      <p>Combined laser triangulation with Raspberry Pi imaging to produce 3D topographic maps of the
+        seafloor in MATLAB.</p>
+    </div>
+    <div>
+      <strong>Testing</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Testing">
+      <p>Ran multiple prototyping sessions and dry tests, tuning the mechanical and electrical
+        systems for reliable, consistent mobility.</p>
+    </div>
+  </div>
+</details>
+```
+
+---
+
+## Hydrogel Compression Testing Device {#e4-hydrogel-tester}
+
+```{=html}
+<div class="project">
+  <div class="project-img">
+    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Hydrogel compression testing device">
+  </div>
+  <div class="project-text">
+    <p><strong>Role:</strong> Project Lead, Harvey Mudd E4 &nbsp;|&nbsp; September 2025 – December 2025</p>
+    <p><strong>Overview:</strong><br>
+      A low-cost, air-pressure-driven compression tester that lets 4th and 5th graders measure hydrogel
+      deformation at school outreach events, using popping boba as a food-safe test material.</p>
+    <p><strong>Skills:</strong><br>
+      SolidWorks, Machining, Fabrication, Design for Cost, Prototyping, STEM Outreach</p>
+  </div>
+</div>
+
+<details class="more">
+  <summary></summary>
+  <div class="detail-grid">
+    <div>
+      <strong>Design</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="SolidWorks model">
+      <p>Modeled the full prototype in SolidWorks before building anything.</p>
+    </div>
+    <div>
+      <strong>Fabrication</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Fabrication">
+      <p>Machined and fabricated components that combine off-the-shelf syringes, check valves, and
+        PVC tubing into a modular, waterproof design.</p>
+    </div>
+    <div>
+      <strong>Result</strong>
+      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Final device">
+      <p>Final cost of $11.26 per unit, under the $15 per unit budget.</p>
+    </div>
+  </div>
+</details>
+```
+
+---

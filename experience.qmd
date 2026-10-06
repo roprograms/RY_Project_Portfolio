@@ -1,0 +1,65 @@
+---
+title: "Experience"
+toc: false
+---
+
+## NSF Undergraduate Researcher, Michigan State University {#msu-research}
+
+```{=html}
+<div class="project">
+  <div class="project-img">
+    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Semiconductor materials research">
+  </div>
+  <div class="project-text">
+    <p><strong>Department of Materials Engineering, East Lansing, MI</strong> &nbsp;|&nbsp; June 2026 – September 2026</p>
+    <p><strong>Overview:</strong><br>
+      I researched semiconductor materials, screening earth-abundant semiconductors for photocatalytic
+      water-splitting. I extended SALSA, a GitHub-hosted materials-discovery pipeline, with automated
+      convex-hull stability analysis, and validated thermodynamic stability across four levels of theory
+      (OPT2, SP, enthalpy, and Gibbs free energy).</p>
+    <p>I also consolidated about 20 separate scripts into one Python suite for AFLOW and Materials
+      Project scraping, CIF generation, CRYSTAL23 parsing, and hull plotting. This cut manual analysis
+      from days to hours.</p>
+    <p><strong>Skills:</strong><br>
+      Python, Computational Materials Science, AFLOW, Materials Project, CRYSTAL23, Data Pipelines</p>
+  </div>
+</div>
+```
+
+---
+
+## Research Intern, Aravasc Inc. {#aravasc}
+
+```{=html}
+<div class="project">
+  <div class="project-img">
+    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Aravasc Inc.">
+  </div>
+  <div class="project-text">
+    <p><strong>Sunnyvale, CA</strong> &nbsp;|&nbsp; June 2024 – August 2024</p>
+    <p><strong>Overview:</strong><br>
+      I took part in experiments to develop a safe and reliable diagnostic for detecting HER2+ breast
+      cancer. I analyzed MSH2IA iron nanoparticles, polymers, and PEG amines using High-Pressure Liquid
+      Chromatography (HPLC).</p>
+    <p><strong>Skills:</strong><br>
+      HPLC, Wet Lab Experimentation, Nanoparticle Characterization</p>
+  </div>
+</div>
+```
+
+---
+
+## Student-Athlete, CMS Men's Tennis {#tennis}
+
+```{=html}
+<div class="project">
+  <div class="project-img">
+    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="CMS Men's Tennis">
+  </div>
+  <div class="project-text">
+    <p><strong>Claremont, CA</strong> &nbsp;|&nbsp; August 2024 – Present</p>
+    <p>I compete in NCAA Division III varsity tennis for CMS Men's Tennis, a top-5 nationally ranked
+      team. I balance 20+ hours a week of training and travel with a rigorous engineering course load.</p>
+  </div>
+</div>
+```

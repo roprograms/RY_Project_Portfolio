@@ -1,0 +1,74 @@
+---
+title: "Rohan Yarlagadda"
+image: images/headshot.jpg
+about:
+  template: jolla
+  links:
+    - icon: envelope-fill
+      text: Email
+      href: mailto:ryarlagadda006@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/rohan-yarlagadda-907777332/
+    - icon: github
+      text: GitHub
+      href: https://github.com/roprograms
+---
+
+Welcome to my portfolio! I'm a junior Engineering major at
+[Harvey Mudd College](https://www.hmc.edu), graduating in May 2028. My work spans
+hardware design, CAD and fabrication, sensors, and embedded imaging systems. This
+past summer I was an NSF undergraduate researcher at Michigan State University,
+building Python tools to screen semiconductors for photocatalytic water-splitting.
+I'm now designing the camera hardware for a low-cost fluorescence-guided surgery
+imaging system. Outside of engineering, I compete on the CMS Men's Tennis team.
+Check out my projects below!
+
+---
+
+```{=html}
+<!-- Project cards: copy one <a class="proj-card"> block per project.
+     href points to a page, optionally with #section-id to jump to that section.
+     To use a real photo, change src to e.g. images/projects/e79/main.jpg -->
+<div class="proj-grid">
+  <a href="projects.html#path-imaging" class="proj-card">
+    <img class="proj-img" src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Fluorescence-guided surgery imaging system">
+    <div class="proj-label">
+      <p class="proj-course">PATH Imaging</p>
+      <p class="proj-name">Fluorescence-Guided Surgery Imaging</p>
+    </div>
+  </a>
+
+  <a href="experience.html#msu-research" class="proj-card">
+    <img class="proj-img" src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Semiconductor materials research">
+    <div class="proj-label">
+      <p class="proj-course">Research · Michigan State</p>
+      <p class="proj-name">Semiconductor Materials Discovery</p>
+    </div>
+  </a>
+
+  <a href="projects.html#e79-seafloor-mapping" class="proj-card">
+    <img class="proj-img" src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Underwater seafloor mapping robot">
+    <div class="proj-label">
+      <p class="proj-course">E79</p>
+      <p class="proj-name">Underwater Seafloor Mapping Robot</p>
+    </div>
+  </a>
+
+  <a href="projects.html#e4-hydrogel-tester" class="proj-card">
+    <img class="proj-img" src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Hydrogel compression testing device">
+    <div class="proj-label">
+      <p class="proj-course">E4</p>
+      <p class="proj-name">Hydrogel Compression Tester</p>
+    </div>
+  </a>
+</div>
+
+<!-- Resume: to update it, replace images/Resume.pdf with the new file (same name). -->
+<div style="text-align:center; margin: 1.5rem 0 1rem;">
+  <a href="images/Resume.pdf" target="_blank" class="btn-link">Open Full Resume in New Tab</a>
+</div>
+<div style="text-align:center;">
+  <iframe class="resume-frame" src="images/Resume.pdf"></iframe>
+</div>
+```
