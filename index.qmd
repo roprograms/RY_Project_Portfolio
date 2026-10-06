@@ -29,7 +29,7 @@ Check out my projects below!
 ```{=html}
 <!-- Project cards: copy one <a class="proj-card"> block per project.
      href points to a page, optionally with #section-id to jump to that section.
-     To use a real photo, change src to e.g. images/projects/e79/main.jpg -->
+     To use a real photo, change src to e.g. images/projects/e80/main.jpg -->
 <div class="proj-grid">
   <a href="projects.html#path-imaging" class="proj-card">
     <img class="proj-img" src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Fluorescence-guided surgery imaging system">
@@ -47,19 +47,19 @@ Check out my projects below!
     </div>
   </a>
 
-  <a href="projects.html#e79-seafloor-mapping" class="proj-card">
-    <img class="proj-img" src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Underwater seafloor mapping robot">
+  <a href="projects.html#e80-seafloor-mapping" class="proj-card">
+    <img class="proj-img" src="images/projects/e80/robot.jpg" alt="Seafloor mapping robot">
     <div class="proj-label">
-      <p class="proj-course">E79</p>
-      <p class="proj-name">Underwater Seafloor Mapping Robot</p>
+      <p class="proj-course">E80</p>
+      <p class="proj-name">3D Seafloor Mapping Robot</p>
     </div>
   </a>
 
   <a href="projects.html#e4-hydrogel-tester" class="proj-card">
-    <img class="proj-img" src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Hydrogel compression testing device">
+    <img class="proj-img" src="images/projects/e4/prototype.jpg" alt="Boba Busters hydrogel compression tester">
     <div class="proj-label">
       <p class="proj-course">E4</p>
-      <p class="proj-name">Hydrogel Compression Tester</p>
+      <p class="proj-name">Boba Busters: Hydrogel Compression Tester</p>
     </div>
   </a>
 </div>

@@ -87,6 +87,13 @@ a:hover {
   text-align: justify;
 }
 
+/* Justified text leaves big gaps between words on narrow screens */
+@media (max-width: 768px) {
+  .project-text {
+    text-align: left;
+  }
+}
+
 /* "Show More" section: uses <details>, so no JavaScript is needed */
 details.more > summary {
   display: inline-block;

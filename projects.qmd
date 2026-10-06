@@ -5,8 +5,8 @@ toc: false
 
 <!-- To add a project: copy everything from a "## Heading {#id}" line down to the
      next "---", then change the heading, id, image paths, and text. The {#id} is
-     the link anchor used by the home page cards (e.g. projects.html#e79-seafloor-mapping).
-     To use a real photo, change src to e.g. images/projects/e79/main.jpg -->
+     the link anchor used by the home page cards (e.g. projects.html#e80-seafloor-mapping).
+     To use a real photo, change src to e.g. images/projects/e80/main.jpg -->
 
 ## Fluorescence-Guided Surgery Imaging System {#path-imaging}
 
@@ -54,21 +54,25 @@ toc: false
 
 ---
 
-## Underwater Seafloor Mapping Robot {#e79-seafloor-mapping}
+## Low-Cost 3D Seafloor Mapping Robot {#e80-seafloor-mapping}
 
 ```{=html}
 <div class="project">
   <div class="project-img">
-    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Underwater seafloor mapping robot">
+    <img src="images/projects/e80/robot.jpg" alt="The finished robot: PVC frame with foam floats, blue and orange waterproof electronics boxes, and propellers">
   </div>
   <div class="project-text">
-    <p><strong>Role:</strong> Project Lead, Harvey Mudd E79 &nbsp;|&nbsp; January 2026 – June 2026</p>
+    <p><strong>Role:</strong> Project Lead, Harvey Mudd E80 &nbsp;|&nbsp; January 2026 – June 2026</p>
     <p><strong>Overview:</strong><br>
-      I led a four-person team to build a seafloor mapping system on a $50 budget. It combines laser
-      triangulation and Raspberry Pi imaging to generate 3D topographic maps in MATLAB, mounted on an
-      underwater diving robot.</p>
+      Seafloor mapping usually relies on sonar from research ships, which can cost around $35,000 a day.
+      I led a four-person team that built an autonomous underwater vehicle (AUV) to map shallow seafloor
+      terrain with lasers and a camera instead, on a $50 budget. A Raspberry Pi camera captures up to
+      4 photos per second of a blue laser dot and a green laser grid. Triangulating where those points land
+      gives distance and slope, which we turned into a 3D topographic map in MATLAB. The robot also logs
+      water temperature and pressure.</p>
     <p><strong>Skills:</strong><br>
-      Team Leadership, Laser Triangulation, Raspberry Pi, MATLAB, Sensor Design, Prototyping &amp; Testing</p>
+      Team Leadership, Laser Triangulation, Camera Calibration, Raspberry Pi, Teensy, Op-Amp Sensor Circuits,
+      MATLAB, Waterproofing, Field Testing</p>
   </div>
 </div>
 
@@ -76,22 +80,47 @@ toc: false
   <summary></summary>
   <div class="detail-grid">
     <div>
-      <strong>Sensors</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Sensors">
-      <p>Designed and built temperature, pressure, and camera sensors so the diving robot could
-        collect data underwater.</p>
+      <strong>Mechanical Design</strong>
+      <img src="images/projects/e80/auv-render.jpg" alt="Labeled render of the robot showing propellers, electronics boxes, laser housing, ballast, and thermistor">
+      <p>A PVC frame with foam floats, one vertical propeller for diving, and two horizontal propellers
+        for steering. The blue box holds the sensor circuit board and battery, and the orange box holds the
+        Pi, camera, and green laser. A 3D-printed ballast holder keeps the weights from shifting, and the
+        blue laser sits in its own angled housing for depth triangulation.</p>
     </div>
     <div>
-      <strong>Mapping</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="3D topographic map">
-      <p>Combined laser triangulation with Raspberry Pi imaging to produce 3D topographic maps of the
-        seafloor in MATLAB.</p>
+      <strong>Electronics</strong>
+      <img src="images/projects/e80/system-schematic.jpg" alt="System schematic with Raspberry Pi Zero 2 W, Teensy 4.0, sensors, and lasers">
+      <p>A Teensy 4.0 logs temperature (thermistor) and pressure (MPX5700) through op-amp circuits that
+        we calibrated in the lab. A Raspberry Pi Zero 2 W runs the camera and lasers, all powered by an
+        11.1 V LiPo battery.</p>
     </div>
     <div>
-      <strong>Testing</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Testing">
-      <p>Ran multiple prototyping sessions and dry tests, tuning the mechanical and electrical
-        systems for reliable, consistent mobility.</p>
+      <strong>Laser-Camera Module</strong>
+      <img src="images/projects/e80/camera-laser-box.jpg" alt="Open orange waterproof box containing the Raspberry Pi, camera, and green laser">
+      <p>A waterproof box holds the Pi, camera, and a green laser with a diffraction grating that spreads
+        it into a grid. We chose green and blue lasers because those wavelengths travel farthest through
+        water. We calibrated the camera against a flat surface tilted from 0° to 45° to convert pixels to
+        meters.</p>
+    </div>
+    <div>
+      <strong>Deployment</strong>
+      <img src="images/projects/e80/deployment-map.jpg" alt="Satellite view of Dana Point harbor with the robot's path marked in red">
+      <p>After test runs at a lake and a pool, we deployed at Dana Point, CA, on April 25, 2026 (path in
+        red). Pool testing revealed a leak in the camera box at 1.5 m, so we reprogrammed the robot to
+        cruise just below the surface. We also fixed a thrust imbalance between the two side motors that
+        made the robot drift in circles.</p>
+    </div>
+    <div>
+      <strong>Launch Day</strong>
+      <img src="images/projects/e80/launch-day.jpg" alt="The four-person team holding the robot at Dana Point on launch day">
+      <p>Our team with the robot at Dana Point after the final deployment.</p>
+    </div>
+    <div>
+      <strong>Results</strong>
+      <img src="images/projects/e80/topography-map.jpg" alt="MATLAB 3D seafloor topography surface with a sample camera capture">
+      <p>Our MATLAB map of a roughly 15 m track showed the seafloor reaching about 1.2 m deep. Temperature
+        read about 6 °C high, likely from Raspberry Pi heat near the sensor board. Next steps: a laser that
+        doesn't overheat, and GPS to tag each photo's location.</p>
     </div>
   </div>
 </details>
@@ -99,20 +128,24 @@ toc: false
 
 ---
 
-## Hydrogel Compression Testing Device {#e4-hydrogel-tester}
+## Boba Busters: Hydrogel Compression Tester {#e4-hydrogel-tester}
 
 ```{=html}
 <div class="project">
   <div class="project-img">
-    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Hydrogel compression testing device">
+    <img src="images/projects/e4/prototype.jpg" alt="Boba Busters final prototype: a 60 mL syringe chamber connected by tubing to a 1 mL pump syringe">
   </div>
   <div class="project-text">
     <p><strong>Role:</strong> Project Lead, Harvey Mudd E4 &nbsp;|&nbsp; September 2025 – December 2025</p>
     <p><strong>Overview:</strong><br>
-      A low-cost, air-pressure-driven compression tester that lets 4th and 5th graders measure hydrogel
-      deformation at school outreach events, using popping boba as a food-safe test material.</p>
+      A Harvey Mudd engineering professor who runs science outreach at local elementary schools asked
+      our four-person team for a hands-on way to teach 4th and 5th graders how hydrogels deform. Our
+      device, Boba Busters, uses a small 1 mL syringe to pump air into a clear 60 mL syringe, pushing a
+      plunger down onto a piece of popping boba (a cheap, food-safe hydrogel). Students track how much
+      air they've pumped in and read the boba's height off a millimeter scale until it pops.</p>
     <p><strong>Skills:</strong><br>
-      SolidWorks, Machining, Fabrication, Design for Cost, Prototyping, STEM Outreach</p>
+      SolidWorks, Design for Cost, Prototyping, Experimental Design &amp; Testing, Data Analysis, STEM Outreach</p>
+    <a href="images/projects/e4/Final_Prototype_Memo.pdf" target="_blank" class="btn-link">Read the Final Prototype Memo (PDF)</a>
   </div>
 </div>
 
@@ -121,19 +154,25 @@ toc: false
   <div class="detail-grid">
     <div>
       <strong>Design</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="SolidWorks model">
-      <p>Modeled the full prototype in SolidWorks before building anything.</p>
+      <img src="images/projects/e4/cad-exploded.jpg" alt="SolidWorks exploded view of the device">
+      <p>Modeled the full assembly in SolidWorks. Every part is off-the-shelf from Home Depot or Amazon
+        (syringes, check valves, vinyl tubing, and a ½-inch PVC coupling as the boba stand), and a unit
+        can be built with just scissors, tape, and hot glue, so teachers can make their own. The design
+        is modular and waterproof: parts swap out easily, and the whole unit can be rinsed off.</p>
     </div>
     <div>
-      <strong>Fabrication</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Fabrication">
-      <p>Machined and fabricated components that combine off-the-shelf syringes, check valves, and
-        PVC tubing into a modular, waterproof design.</p>
+      <strong>Testing</strong>
+      <img src="images/projects/e4/testing.jpg" alt="Device loaded with a piece of popping boba">
+      <p>Ran three trials, pumping air until the boba popped. It took 12.5, 12, and 13 mL of air, a
+        relative standard deviation of 4%, which met our "good consistency" target. Five first-time
+        users rated ease of use 2.8 out of 3.</p>
     </div>
     <div>
       <strong>Result</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Final device">
-      <p>Final cost of $11.26 per unit, under the $15 per unit budget.</p>
+      <img src="images/projects/e4/results-graph.jpg" alt="Graph of boba height versus air volume">
+      <p>Example data a student would collect: the boba compresses gradually, then pops. The final
+        cost was $11.26 per unit, under the $15 budget. Next steps: lubricate the plunger to reduce
+        friction, and label the release valve, which confused one tester.</p>
     </div>
   </div>
 </details>
