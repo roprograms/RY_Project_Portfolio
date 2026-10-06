@@ -8,22 +8,74 @@ toc: false
 ```{=html}
 <div class="project">
   <div class="project-img">
-    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Semiconductor materials research">
+    <img src="images/experience/msu/crystal-structure.jpg" alt="Crystal structure generated from a CIF file for a candidate compound">
   </div>
   <div class="project-text">
     <p><strong>Department of Materials Engineering, East Lansing, MI</strong> &nbsp;|&nbsp; June 2026 – September 2026</p>
-    <p><strong>Overview:</strong><br>
-      I researched semiconductor materials, screening earth-abundant semiconductors for photocatalytic
-      water-splitting. I extended SALSA, a GitHub-hosted materials-discovery pipeline, with automated
-      convex-hull stability analysis, and validated thermodynamic stability across four levels of theory
-      (OPT2, SP, enthalpy, and Gibbs free energy).</p>
-    <p>I also consolidated about 20 separate scripts into one Python suite for AFLOW and Materials
-      Project scraping, CIF generation, CRYSTAL23 parsing, and hull plotting. This cut manual analysis
-      from days to hours.</p>
+    <p><strong>The lab's project:</strong><br>
+      SALSA (Substitution, Approximation, evoLutionary Search, Ab initio calculations) is a
+      computational workflow from Prof. Jose L. Mendoza-Cortes's group that discovers new
+      semiconductor materials. Instead of a brute-force search, it recombines known compounds to
+      predict new candidates, with applications like photocatalytic water-splitting: using light to
+      split water into hydrogen and oxygen.</p>
+    <p><strong>My contribution:</strong><br>
+      Together with Karina Shih, I added a new final step to SALSA: an automated convex-hull stability
+      analysis that checks whether the materials SALSA predicts are thermodynamically stable. Building on
+      starting scripts from my mentor, Marcus Djokic, which contained much of the underlying chemistry,
+      we built a new <code>ConvexHullAnalysis</code> module of Python scripts that pulls reference data from
+      AFLOW and Materials Project, finds the stable compounds, prepares them for CRYSTAL23 calculations
+      on the HPCC, and collects and plots the results. It replaced about 20 separate scripts and cut
+      manual analysis from days to hours.</p>
     <p><strong>Skills:</strong><br>
-      Python, Computational Materials Science, AFLOW, Materials Project, CRYSTAL23, Data Pipelines</p>
+      Python, pandas, pymatgen, Materials Project API, AFLOW, CRYSTAL23, High-Performance Computing,
+      Convex-Hull Stability Analysis, Research Software Development</p>
+    <a href="https://arxiv.org/abs/2310.00118" target="_blank" class="btn-link">Read the SALSA Paper (arXiv)</a>
   </div>
 </div>
+
+<details class="more">
+  <summary></summary>
+  <div class="detail-grid">
+    <div>
+      <strong>A New Pipeline Step</strong>
+      <img src="images/experience/msu/directory-tree.jpg" alt="SALSA directory tree: steps 1 to 4 plus the new 5. ConvexHullAnalysis folder">
+      <p>Steps 1–4 of SALSA already existed. Step 5, <code>ConvexHullAnalysis</code>, holds the
+        scripts Karina and I wrote.</p>
+    </div>
+    <div>
+      <strong>Scraping &amp; Stability Screening</strong>
+      <img src="images/experience/msu/stable-hull-points.jpg" alt="Table of stable hull compounds with formation enthalpies">
+      <p><code>Materials_Scraper.py</code> gathers energy, composition, and crystal-structure data for
+        each candidate's chemical system from AFLOW and Materials Project.
+        <code>ConvexHullStability.py</code> cleans that data, computes formation energies, builds a
+        ternary convex hull, and outputs only the stable compounds (above).</p>
+    </div>
+    <div>
+      <strong>Crystal Structures for DFT</strong>
+      <img src="images/experience/msu/generate-cifs-code.jpg" alt="Python code that builds a pymatgen Structure from a CSV row and writes a CIF">
+      <p><code>generate_cifs.py</code> rebuilds each stable (or near-stable) compound's crystal
+        structure and writes it as a symmetrized CIF file, ready for CRYSTAL23 optimization,
+        frequency, and single-point calculations on the HPCC.</p>
+    </div>
+    <div>
+      <strong>Results &amp; Hull Plots</strong>
+      <img src="images/experience/msu/ag-br-s-hull-example.jpg" alt="3D ternary convex hull for the Ag-Br-S system">
+      <p><code>Results_Aggregator.py</code> collects the CRYSTAL23 energies into one dataset, and
+        <code>Hull_Plotter.py</code> draws ternary and quaternary hulls comparing SALSA candidates with
+        AFLOW reference materials, across OPT2, SP, enthalpy, and Gibbs free energy. Shown: an Ag-Br-S
+        hull from Marcus Djokic's original scripts, which this step builds on.</p>
+    </div>
+  </div>
+</details>
+
+<p><strong>Acknowledgments:</strong> A special thank you to my mentor, Marcus Djokic. His starting
+  scripts contained much of the chemistry behind this step and gave Karina and me a strong foundation
+  to build our scripts from. Thank you as well to Prof. Jose L. Mendoza-Cortes and Karina Shih. I'm
+  grateful to all three for letting me contribute to their research and for a great head start and
+  learning opportunity.</p>
+<p style="font-size: 0.85rem; opacity: 0.75;">SALSA is described in: S. M. Stafford, A. Aduenko,
+  M. Djokic, Y.-H. Lin, and J. L. Mendoza-Cortes, "Transforming materials discovery for artificial
+  photosynthesis: High-throughput screening of earth-abundant semiconductors," arXiv:2310.00118, 2023.</p>
 ```
 
 ---

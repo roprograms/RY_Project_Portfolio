@@ -8,52 +8,6 @@ toc: false
      the link anchor used by the home page cards (e.g. projects.html#e80-seafloor-mapping).
      To use a real photo, change src to e.g. images/projects/e80/main.jpg -->
 
-## Fluorescence-Guided Surgery Imaging System {#path-imaging}
-
-```{=html}
-<div class="project">
-  <div class="project-img">
-    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Fluorescence-guided surgery imaging system">
-  </div>
-  <div class="project-text">
-    <p><strong>Role:</strong> Mechanical Engineer, PATH Imaging &nbsp;|&nbsp; September 2026 – Present</p>
-    <p><strong>Overview:</strong><br>
-      A low-cost, Raspberry Pi–based dual-camera system that overlays fluorescence imaging onto
-      live visible-light video to guide surgeons. I'm working with a 7-person team and a PATH Imaging
-      liaison to deliver this at a fraction of the cost of commercial systems.</p>
-    <p><strong>Skills:</strong><br>
-      CAD, 3D Printing, Optical Mounting &amp; Alignment, Raspberry Pi, Embedded Firmware, Real-Time Image Processing</p>
-  </div>
-</div>
-
-<details class="more">
-  <summary></summary>
-  <div class="detail-grid">
-    <div>
-      <strong>Camera Mounting (CAD)</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Camera mount CAD">
-      <p>Leading CAD for the full camera mounting assembly, designing 3D-printed adapters that fit
-        16 mm and 25 mm C-mount lenses onto the Vision Components IMX412 RGB and TechNexion NIR
-        fluorescence camera modules with precise alignment.</p>
-    </div>
-    <div>
-      <strong>Firmware &amp; Image Processing</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Video overlay">
-      <p>Developing firmware and image-processing code to capture, synchronize, and overlay the
-        fluorescence and visible-light video feeds in real time.</p>
-    </div>
-    <div>
-      <strong>Team &amp; Sponsor</strong>
-      <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Team">
-      <p>Collaborating with a 7-person team and a PATH Imaging liaison to meet clinical needs on a
-        tight budget.</p>
-    </div>
-  </div>
-</details>
-```
-
----
-
 ## Low-Cost 3D Seafloor Mapping Robot {#e80-seafloor-mapping}
 
 ```{=html}
