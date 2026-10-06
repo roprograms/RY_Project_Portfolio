@@ -1,5 +1,11 @@
 project:
   type: website
+  # Only these pages are built. To bring back Personal Projects or the Blog,
+  # add personal.qmd / blog.qmd and posts/*.qmd here and uncomment their navbar links.
+  render:
+    - index.qmd
+    - experience.qmd
+    - projects.qmd
 
 website:
   title: "Rohan Yarlagadda"
@@ -15,10 +21,10 @@ website:
         text: Experience
       - href: projects.qmd
         text: Projects
-      - href: personal.qmd
-        text: Personal Projects
-      - href: blog.qmd
-        text: Blog
+      # - href: personal.qmd
+      #   text: Personal Projects
+      # - href: blog.qmd
+      #   text: Blog
     right:
       - icon: github
         href: https://github.com/roprograms
