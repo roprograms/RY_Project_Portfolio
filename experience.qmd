@@ -25,7 +25,7 @@ toc: false
       we built a new <code>ConvexHullAnalysis</code> module of Python scripts that pulls reference data from
       AFLOW and Materials Project, finds the stable compounds, prepares them for CRYSTAL23 calculations
       on the HPCC, and collects and plots the results. It replaced about 20 separate scripts and cut
-      manual analysis from days to hours.</p>
+      manual analysis from days to hours, and our final hull plots matched Marcus's reference results.</p>
     <p><strong>Skills:</strong><br>
       Python, pandas, pymatgen, Materials Project API, AFLOW, CRYSTAL23, High-Performance Computing,
       Convex-Hull Stability Analysis, Research Software Development</p>
@@ -62,8 +62,9 @@ toc: false
       <img src="images/experience/msu/ag-br-s-hull-example.jpg" alt="3D ternary convex hull for the Ag-Br-S system">
       <p><code>Results_Aggregator.py</code> collects the CRYSTAL23 energies into one dataset, and
         <code>Hull_Plotter.py</code> draws ternary and quaternary hulls comparing SALSA candidates with
-        AFLOW reference materials, across OPT2, SP, enthalpy, and Gibbs free energy. Shown: an Ag-Br-S
-        hull from Marcus Djokic's original scripts, which this step builds on.</p>
+        AFLOW reference materials, across OPT2, SP, enthalpy, and Gibbs free energy. Our finished plots
+        matched Marcus Djokic's reference results, confirming the new step works correctly. Shown: an
+        Ag-Br-S hull from Marcus's original scripts.</p>
     </div>
   </div>
 </details>
@@ -76,27 +77,6 @@ toc: false
 <p style="font-size: 0.85rem; opacity: 0.75;">SALSA is described in: S. M. Stafford, A. Aduenko,
   M. Djokic, Y.-H. Lin, and J. L. Mendoza-Cortes, "Transforming materials discovery for artificial
   photosynthesis: High-throughput screening of earth-abundant semiconductors," arXiv:2310.00118, 2023.</p>
-```
-
----
-
-## Research Intern, Aravasc Inc. {#aravasc}
-
-```{=html}
-<div class="project">
-  <div class="project-img">
-    <img src="https://placehold.co/400x300?text=Photo+Coming+Soon" alt="Aravasc Inc.">
-  </div>
-  <div class="project-text">
-    <p><strong>Sunnyvale, CA</strong> &nbsp;|&nbsp; June 2024 – August 2024</p>
-    <p><strong>Overview:</strong><br>
-      I took part in experiments to develop a safe and reliable diagnostic for detecting HER2+ breast
-      cancer. I analyzed MSH2IA iron nanoparticles, polymers, and PEG amines using High-Pressure Liquid
-      Chromatography (HPLC).</p>
-    <p><strong>Skills:</strong><br>
-      HPLC, Wet Lab Experimentation, Nanoparticle Characterization</p>
-  </div>
-</div>
 ```
 
 ---
